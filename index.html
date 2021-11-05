@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Grid de Bootstrap 5</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="row">
+            <div class="col">
+                <h1>HEADER</h1>
+                <span>12 Columnas</span>
+            </div>
+        </header>
+
+        <!-- para centrar el aside debo ir al contenedor e indicarle el align-items-center -->
+        <section class="contenedor-main row align-items-center">
+            <!-- del tamaño mediano en adelante va a ocupar 8 columnas si el tamaño es menor a tamaño md medira 12 cols -->
+            <main class="col-md-8">
+                <h2>MAIN</h2>
+                <!-- d-none no se muestra y del tamaño mediano en adelante si se muestra -->
+                <span class="d-none d-md-block">8 Columas</span>
+                <!-- d-bloxk se mustra y del tamaño mediano en adelante no se muestra -->
+                <span class="d-block d-md-none">12 Columnas</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro voluptatibus quisquam ducimus odit laborum maxime incidunt dolorum voluptate nam distinctio. Reiciendis cumque ea beatae provident quo. Provident magnam quasi quis!</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere maxime eum recusandae placeat minima consequuntur a, architecto, corporis optio amet repellat enim ipsam sapiente! Aspernatur itaque fuga aperiam laboriosam quidem!</p>
+            </main>
+            <!-- apartir del tamaño mediano en adelante medira 8 columnas si es mas peuqeño que mediano medira 12 cols -->
+            <aside class="col-md-4">
+                <h3>ASIDE</h3>
+                <span class="d-none d-md-block">4 Columnas</span>
+                <span class="d-block d-md-none">12 Columnas</span>
+            </aside>   
+        </section>
+
+        <section class="row widgets justify-content-between">
+            <div class="col-12 col-md-4 col-lg-3">
+                <span class="d-none d-md-none d-lg-block">3 Columnas</span>
+                <span class="d-none d-md-block d-lg-none">4 Columnas</span>
+                <span class="d-block d-md-none d-lg-none">12 Columnas</span>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia ipsam cum voluptas corrupti minus animi praesentium veniam sequi nihil incidunt suscipit, voluptatem magnam consequuntur harum aliquam doloribus eligendi eius id.</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <span class="d-none d-md-none d-lg-block">3 Columnas</span>
+                <span class="d-none d-md-block d-lg-none">4 Columnas</span>
+                <span class="d-block d-md-none d-lg-none">12 Columnas</span>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores et repellendus voluptatem, cumque quod aperiam perspiciatis esse eveniet deserunt neque, in eius maxime laudantium similique fugit impedit consequatur aspernatur vitae?</p>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <span class="d-none d-md-none d-lg-block">3 Columnas</span>
+                <span class="d-none d-md-block d-lg-none">4 Columnas</span>
+                <span class="d-block d-md-none d-lg-none">12 Columnas</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum deleniti doloremque earum distinctio cum iste non maiores illum praesentium repudiandae esse, numquam blanditiis saepe magni quia natus perspiciatis eveniet ipsam!</p>
+            </div>
+        </section>
+
+        <footer class="row">
+            <div class="col">
+                <h4>Footer</h4>
+                <span>12 Columnas</span>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
